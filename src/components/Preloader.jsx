@@ -5,30 +5,18 @@ const Preloader = () => {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-950 transition-opacity duration-1000">
             <div className="relative flex flex-col items-center justify-center">
                 {/* Outer Glow Ring */}
-                <div className="absolute w-32 h-32 rounded-full border-t-2 border-l-2 border-blue-500/50 animate-spin blur-sm"></div>
-                <div className="absolute w-32 h-32 rounded-full border-b-2 border-r-2 border-purple-500/50 animate-spin blur-sm" style={{ animationDirection: 'reverse', animationDuration: '2s' }}></div>
+                <div className="absolute w-40 h-40 rounded-full border-t-4 border-l-4 border-blue-500 animate-[spin_3s_linear_infinite] blur-[2px]"></div>
+                <div className="absolute w-40 h-40 rounded-full border-b-4 border-r-4 border-purple-500 animate-[spin_2s_linear_infinite_reverse] blur-[2px]"></div>
                 
-                {/* Inner Content */}
-                <div className="relative z-10 flex flex-col items-center">
-                    {/* Logo/Icon Area */}
-                    <div className="w-20 h-20 mb-4 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-xl rotate-45 flex items-center justify-center shadow-lg shadow-blue-500/20 animate-pulse">
-                        <span className="text-white text-2xl font-bold -rotate-45">MD</span>
+                {/* Inner Content - Magnificent Logo */}
+                <div className="relative z-10 flex flex-col items-center justify-center">
+                    <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-3xl sm:text-4xl shadow-[0_0_40px_rgba(59,130,246,0.6)] animate-pulse hover:scale-110 transition-transform duration-300">
+                        MDev
                     </div>
-                    
-                    {/* Loading Text */}
-                    <div className="flex items-center space-x-1 mt-4">
-                        <div className="w-1 h-8 bg-blue-500 rounded animate-[bounce_1s_infinite]"></div>
-                        <div className="w-1 h-8 bg-purple-500 rounded animate-[bounce_1s_infinite_0.1s]"></div>
-                        <div className="w-1 h-8 bg-pink-500 rounded animate-[bounce_1s_infinite_0.2s]"></div>
-                    </div>
-                    
-                    <h2 className="mt-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 font-bold tracking-widest text-sm animate-pulse">
-                        CHARGEMENT...
-                    </h2>
                 </div>
                 
                 {/* Background effects */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
             </div>
         </div>
     );

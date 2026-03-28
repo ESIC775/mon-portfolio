@@ -45,10 +45,10 @@ const About = () => {
                         </div>
                         <div className="space-y-4 text-gray-300 leading-relaxed">
                             <p className="text-base sm:text-lg">
-                                Mon parcours académique et mes passions m'ont permis de développer des compétences variées, à la croisée de l'informatique et des nouvelles technologies. Étudiant en Master 1 Informatique à l'Université Sorbonne Paris Nord, je suis à la recherche d'un <span className="text-blue-400 font-semibold">stage de 3 mois</span> dans le domaine du développement web.
+                                À la croisée de l'ingénierie logicielle et des nouvelles technologies, j'ai développé au fil de mes projets un fort intérêt pour la conception web. Actuellement étudiant en Master 1 Informatique à l'Université Sorbonne Paris Nord, je cherche à approfondir mes compétences et à mieux maîtriser les technologies du web moderne.
                             </p>
                             <p className="text-base sm:text-lg">
-                                Mes compétences techniques et mon expérience me motivent solidement à relever de nouveaux défis et à contribuer activement aux projets. Ambitieux et passionné, je souhaite mettre mon enthousiasme et mon engagement au service d'une équipe pour contribuer à son succès.
+                                Curieux, motivé et impliqué, j'aime concevoir des solutions à la fois performantes, intuitives et utiles. Grâce à mon parcours et aux projets que j'ai réalisés, j'ai pu renforcer mes compétences techniques tout en développant ma rigueur, mon sens de l'analyse et mon goût pour le travail en équipe. Aujourd'hui, je souhaite mettre mon énergie, ma créativité et mon sérieux au service de projets innovants et formateurs.
                             </p>
                         </div>
                     </motion.div>
@@ -65,13 +65,13 @@ const About = () => {
                         </div>
                         <div className="space-y-4 text-gray-300 leading-relaxed">
                             <p className="text-base sm:text-lg">
-                                Ma passion pour l'informatique a émergé dès mes années de lycée, et elle n'a cessé de grandir au fil de mes études universitaires. J'ai acquis une solide expérience en programmation, notamment avec des langages comme <span className="text-purple-400 font-semibold">HTML, CSS et JavaScript</span>.
+                                Mon attrait pour l'informatique a débuté au lycée pour se transformer en véritable vocation tout au long de mon cursus universitaire. J'ai construit une base technique solide en développement frontend à travers la maîtrise des langages clés : <span className="text-purple-400 font-semibold">HTML, CSS et JavaScript</span>.
                             </p>
                             <p className="text-base sm:text-lg">
-                                J'ai également eu l'opportunité de travailler avec des frameworks modernes tels qu'<span className="text-purple-400 font-semibold">Angular et React</span>, dans le cadre de projets académiques et professionnels.
+                                Par la suite, j'ai eu l'opportunité de concevoir des applications interactives et performantes en exploitant des frameworks modernes tels que <span className="text-purple-400 font-semibold">React et Angular</span>, tant sur des projets académiques qu'en environnement professionnel.
                             </p>
                             <p className="text-base sm:text-lg">
-                                Mon parcours en Master m'a permis de perfectionner mes savoir-faire en développement web et d'explorer de nouvelles technologies.
+                                Aujourd'hui en cycle Master, mon parcours est résolument axé sur l'excellence technique. Il me permet d'affiner mon expertise en développement web et d'explorer les technologies émergentes pour créer des solutions innovantes.
                             </p>
                         </div>
                     </motion.div>

@@ -3,15 +3,6 @@ import React from 'react';
 const Projects = () => {
     const projectsData = [
         {
-            id: 10,
-            title: "Mon Portfolio",
-            description: "La version actuelle de mon portfolio, réalisée avec React et Tailwind CSS.",
-            tags: ["React", "Tailwind CSS", "Vite"],
-            githubLink: "https://github.com/Medaou12/portfolio",
-            demoLink: "#",
-            image: "/portfolio-v2.png"
-        },
-        {
             id: 1,
             title: "Task Manager",
             description: "Application web permettant de gérer des tâches (CRUD) avec React, Node.js, Express et MongoDB, incluant une API REST et une base de données.",
@@ -22,67 +13,12 @@ const Projects = () => {
         },
         {
             id: 2,
-            title: "Aurashop",
-            description: "AuraShop est une plateforme de shopping en ligne basée à Djibouti...",
-            tags: ["E-commerce", "Web Platform"],
-            githubLink: "#",
-            demoLink: "#"
-        },
-        {
-            id: 3,
-            title: "DigiCarte",
-            description: "DigiCarte est une plateforme innovante dédiée à la création de cartes de visite...",
-            tags: ["Innovation", "Business Cards"],
-            githubLink: "#",
-            demoLink: "#"
-        },
-        {
-            id: 4,
-            title: "Projet Ifat",
-            description: "Ifat est une plateforme innovante de gestion pour les entreprises...",
-            tags: ["Management", "Enterprise"],
-            githubLink: "#",
-            demoLink: "#"
-        },
-        {
-            id: 5,
-            title: "Projet Idriss",
-            description: "Site internet statique réalisé avec HTML, CSS, et JavaScript...",
-            tags: ["HTML", "CSS", "JavaScript"],
-            githubLink: "#",
-            demoLink: "#"
-        },
-        {
-            id: 6,
-            title: "Snake Game",
-            description: "Un jeu classique réalisé en HTML, CSS et JavaScript...",
-            tags: ["Game Dev", "JavaScript"],
-            githubLink: "#",
-            demoLink: "#"
-        },
-        {
-            id: 7,
-            title: "Portfolio V1",
-            description: "La première version de mon portfolio personnel...",
-            tags: ["Portfolio", "Web Design"],
-            githubLink: "#",
-            demoLink: "#"
-        },
-        {
-            id: 8,
-            title: "Project Vélo",
-            description: "Un projet académique pour répertorier les stations de vélos à Toulouse...",
-            tags: ["Academic", "Open Data"],
-            githubLink: "#",
-            demoLink: "#"
-        },
-        {
-            id: 9,
-            title: "TP Traitement d'Image",
-            description: "Projet en Python utilisant OpenCV pour des tâches de traitement d'images...",
-            tags: ["Python", "OpenCV"],
-            githubLink: "#",
-            demoLink: "#"
+            title: "Application Web",
+            description: "Une application web fullstack moderne et performante, développée avec une architecture robuste utilisant Node.js et MongoDB",
+            tags: ["Node JS", "Express", "MongoDB"],
+            githubLink: "https://github.com/ESIC775/application.git",
+            demoLink: "http://localhost:5173/",
+            image: "/aurashop.png"
         }
     ];
 

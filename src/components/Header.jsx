@@ -13,7 +13,7 @@ const Header = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg sm:text-xl shadow-lg hover:scale-110 transition-transform duration-300 cursor-pointer">
-            dev
+            MDev
           </div>
         </Link>
 
