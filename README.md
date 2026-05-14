@@ -1,17 +1,48 @@
-# React + Vite
+# Portfolio de Mohamed Daoud
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur le code source de mon portfolio personnel ! 
+Ce projet est une application web moderne développée avec **React** et **Vite**, et stylisée avec **Tailwind CSS**. Il est prêt pour la production, conteneurisé avec **Docker** et **Nginx** pour un déploiement fluide et optimisé.
 
-Currently, two official plugins are available:
+## 🚀 Technologies utilisées
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend** : React (v19), Vite, Tailwind CSS, Framer Motion
+- **Déploiement / DevOps** : Docker, Docker Compose, Nginx
 
-## React Compiler
+## 🛠 Lancer le projet en local (Mode Développement)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Si vous souhaitez modifier le code ou exécuter le projet sans Docker :
 
-## Expanding the ESLint configuration
+1. Installez les dépendances :
+   ```bash
+   npm install
+   ```
+2. Démarrez le serveur de développement :
+   ```bash
+   npm run dev
+   ```
+   Le projet sera alors accessible sur `http://localhost:5173`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# portfolio
+## 🐳 Déploiement avec Docker et Nginx (Production)
+
+Le projet intègre une configuration Docker optimisée de type *multi-stage build* qui :
+1. Compile le code source React.
+2. Déploie les fichiers statiques finaux sur un serveur web Nginx très léger.
+
+Pour lancer la version de production localement ou sur un serveur :
+
+```bash
+docker-compose up -d --build
+```
+
+Votre portfolio sera alors compilé et mis en ligne sur **[http://localhost:8080](http://localhost:8080)**.
+
+### Configuration Nginx
+La configuration Nginx (`nginx/default.conf`) incluse dans ce dépôt est spécialement conçue pour les applications "Single Page Application" (SPA). Elle s'assure que le rafraîchissement des pages via le routeur React fonctionne parfaitement en redirigeant le trafic vers `index.html`.
+
+## 📁 Structure clé du projet
+
+- `src/` : Code source React (Composants, Pages, CSS).
+- `public/` : Images et assets statiques (ex: `bibliotheque.png`).
+- `nginx/` : Fichier de configuration serveur Nginx.
+- `Dockerfile` : Instructions pour la création de l'image Docker de production.
+- `docker-compose.yml` : Permet de lancer facilement le conteneur.
