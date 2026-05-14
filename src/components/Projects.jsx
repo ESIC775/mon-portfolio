@@ -8,7 +8,6 @@ const Projects = () => {
             description: "Application web permettant de gérer des tâches (CRUD) avec React, Node.js, Express et MongoDB, incluant une API REST et une base de données.",
             tags: ["React JS", "Node JS", "Express", "MongoDB"],
             githubLink: "#",
-            demoLink: "#",
             image: "/task-manager.png"
         },
         {
@@ -17,8 +16,15 @@ const Projects = () => {
             description: "Une application web fullstack moderne et performante, développée avec une architecture robuste utilisant Node.js et MongoDB",
             tags: ["Node JS", "Express", "MongoDB"],
             githubLink: "https://github.com/ESIC775/application.git",
-            demoLink: "http://localhost:5173/",
             image: "/aurashop.png"
+        },
+        {
+            id: 3,
+            title: "Gestion Bibliothèque",
+            description: "Système complet de gestion de bibliothèque avec une architecture full-stack. Déploiement via Docker et documentation de l'API avec Swagger.",
+            tags: ["NestJS", "Docker", "Swagger", "TypeScript"],
+            githubLink: "https://github.com/ESIC775/Gestion-Bibliotheque-Mohamed-justin.git",
+            image: "/bibliotheque.png"
         }
     ];
 
@@ -82,18 +88,20 @@ const Projects = () => {
                                         </svg>
                                         GitHub
                                     </a>
-                                    <a 
-                                        href={project.demoLink} 
-                                        target="_blank" 
-                                        rel="noopener noreferrer"
-                                        className="flex items-center gap-2 text-gray-300 hover:text-green-400 font-medium text-sm transition-colors"
-                                    >
-                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                                        </svg>
-                                        Demo
-                                    </a>
+                                    {project.demoLink && (
+                                        <a 
+                                            href={project.demoLink} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className="flex items-center gap-2 text-gray-300 hover:text-green-400 font-medium text-sm transition-colors"
+                                        >
+                                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                            </svg>
+                                            Demo
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </div>
