@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio-app
+    ports:
+      - "8080:80" # Accessible sur le port 8080 sur votre machine locale
+    restart: unless-stopped
